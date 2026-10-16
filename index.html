@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerGlow | Find Your Dream Job</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="container">
+    <a href="#" class="logo">✦ CareerGlow</a>
+
+    <nav>
+        <a href="#jobs">Find Jobs</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About Us</a>
+    </nav>
+
+    <button class="btn primary" id="topSearch">Find a Job ↗</button>
+</header>
+
+<main>
+
+<!-- HERO SECTION -->
+<section class="hero container">
+    <div class="hero-text">
+        <span class="badge">✦ YOUR FUTURE STARTS HERE</span>
+
+        <h1>
+            Find Your Dream Job.<br>
+            <span class="gradient">Build Your Future.</span>
+        </h1>
+
+        <p>
+            Discover exciting career opportunities, connect with
+            amazing companies, and take the next step in your
+            professional journey.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#jobs" class="btn primary">Explore Jobs →</a>
+            <a href="#categories" class="btn dark">Explore Careers</a>
+        </div>
+
+        <div class="stats">
+            <div><strong>500+</strong><span>Job Listings</span></div>
+            <div><strong>120+</strong><span>Companies</span></div>
+            <div><strong>50+</strong><span>Career Skills</span></div>
+        </div>
+    </div>
+
+    <div class="hero-visual">
+        <div class="floating-card card-one">
+            <span>💼</span>
+            <div><strong>Dream Job</strong><small>Your next chapter</small></div>
+        </div>
+
+        <div class="career-art">
+            <div class="art-circle">🚀</div>
+            <h2>Your Talent.</h2>
+            <h2 class="art-pink">Your Future.</h2>
+            <p>Opportunities are waiting for you!</p>
+            <div class="art-line"></div>
+            <div class="art-bottom">DISCOVER · APPLY · GROW</div>
+        </div>
+
+        <div class="floating-card card-two">
+            <span>🎉</span>
+            <div><strong>New Opportunities</strong><small>Make it happen!</small></div>
+        </div>
+    </div>
+</section>
+
+<!-- SEARCH BAR -->
+<section class="search-section container">
+    <div class="search-box">
+        <div class="search-field">
+            <label for="searchInput">Job title or keyword</label>
+            <input id="searchInput" type="text"
+                   placeholder="e.g. Web Developer, Python">
+        </div>
+
+        <div class="search-field">
+            <label for="locationInput">Location</label>
+            <input id="locationInput" type="text"
+                   placeholder="e.g. Chennai, Remote">
+        </div>
+
+        <button class="btn primary" id="searchBtn">🔍 Search Jobs</button>
+    </div>
+    <p class="search-hint">Popular: Web Developer · Python · UI/UX · Data Analyst</p>
+</section>
+
+<!-- JOBS SECTION -->
+<section class="container section" id="jobs">
+    <div class="section-heading">
+        <span>OPPORTUNITIES FOR YOU</span>
+        <h2>Explore Latest Jobs.</h2>
+        <p>Find a role that matches your passion, skills, and ambitions.</p>
+    </div>
+
+    <div class="filters" id="categories">
+        <button class="filter-btn active" data-filter="all">All Jobs</button>
+        <button class="filter-btn" data-filter="development">Development</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="data">Data & Analytics</button>
+        <button class="filter-btn" data-filter="marketing">Marketing</button>
+        <button class="filter-btn" data-filter="internship">Internships</button>
+    </div>
+
+    <div class="results-line">
+        <strong id="resultsCount">9 opportunities</strong>
+        <span>Explore your next career move ✨</span>
+    </div>
+
+    <div class="job-grid" id="jobGrid">
+
+        <article class="job-card" data-category="development"
+                 data-title="frontend developer" data-location="chennai"
+                 data-company="pixelwave">
+            <div class="job-top">
+                <div class="company-icon purple-bg">P</div>
+                <span class="tag">Full-time</span>
+            </div>
+            <h3>Frontend Developer</h3>
+            <p class="company">PixelWave Technologies</p>
+            <div class="job-details"><span>📍 Chennai</span><span>💻 Hybrid</span></div>
+            <div class="skills"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="job-bottom"><div><small>Salary / year</small><strong>₹3–6 LPA</strong></div>
+                <button class="apply-btn" data-job="Frontend Developer"
+                        data-company="PixelWave Technologies">Apply Now ↗</button></div>
+        </article>
+
+        <article class="job-card" data-category="data"
+                 data-title="data analyst" data-location="bangalore"
+                 data-company="databridge">
+            <div class="job-top">
+                <div class="company-icon orange-bg">D</div>
+                <span class="tag">Full-time</span>
+            </div>
+            <h3>Junior Data Analyst</h3>
+            <p class="company">DataBridge Solutions</p>
+            <div class="job-details"><span>📍 Bangalore</span><span>🏢 On-site</span></div>
+            <div class="skills"><span>Excel</span><span>SQL</span><span>Power BI</span></div>
+            <div class="job-bottom"><div><small>Salary / year</small><strong>₹3–5 LPA</strong></div>
+                <button class="apply-btn" data-job="Junior Data Analyst"
+                        data-company="DataBridge Solutions">Apply Now ↗</button></div>
+        </article>
+
+        <article class="job-card" data-category="design"
+                 data-title="ui ux designer" data-location="chennai"
+                 data-company="creativeminds">
+            <div class="job-top">
+                <div class="company-icon pink-bg">C</div>
+                <span class="tag">Full-time</span>
+            </div>
+            <h3>UI/UX Designer</h3>
+            <p class="company">CreativeMinds Studio</p>
+            <div class="job-details"><span>📍 Chennai</span><span>🏠 Remote</span></div>
+            <div class="skills"><span>Figma</span><span>UI Design</span><span>Prototyping</span></div>
+            <div class="job-bottom"><div><small>Salary / year</small><strong>₹3–7 LPA</strong></div>
+                <button class="apply-btn" data-job="UI/UX Designer"
+                        data-company="CreativeMinds Studio">Apply Now ↗</button></div>
+        </article>
+
+        <article class="job-card" data-category="development"
+                 data-title="python developer" data-location="remote"
+                 data-company="codecraft">
+            <div class="job-top">
+                <div class="company-icon green-bg">C</div>
+                <span class="tag">Full-time</span>
+            </div>
+            <h3>Python Developer</h3>
+            <p class="company">CodeCraft Labs</p>
+            <div class="job-details"><span>📍 Remote</span><span>🏠 Work from home</span></div>
+            <div class="skills"><span>Python</span><span>SQL</span><span>APIs</span></div>
+            <div class="job-bottom"><div><small>Salary / year</small><strong>₹4–8 LPA</strong></div>
+                <button class="apply-btn" data-job="Python Developer"
+                        data-company="CodeCraft Labs">Apply Now ↗</button></div>
+        </article>
+
+        <article class="job-card" data-category="marketing"
+                 data-title="digital marketing executive" data-location="coimbatore"
+                 data-company="brandnest">
+            <div class="job-top">
+                <div class="company-icon blue-bg">B</div>
+                <span class="tag">Full-time</span>
+            </div>
+            <h3>Digital Marketing Executive</h3>
+            <p class="company">BrandNest Media</p>
+            <div class="job-details"><span>📍 Coimbatore</span><span>🏢 On-site</span></div>
+            <div class="skills"><span>SEO</span><span>Social Media</span><span>Content</span></div>
+            <div class="job-bottom"><div><small>Salary / year</small><strong>₹2–4 LPA</strong></div>
+                <button class="apply-btn" data-job="Digital Marketing Executive"
+                        data-company="BrandNest Media">Apply Now ↗</button></div>
+        </article>
+
+        <article class="job-card" data-category="internship"
+                 data-title="web development intern" data-location="chennai"
+                 data-company="nextgen">
+            <div class="job-top">
+                <div class="company-icon violet-bg">N</div>
+                <span class="tag internship-tag">Internship</span>
+            </div>
+            <h3>Web Development Intern</h3>
+            <p class="company">NextGen Digital</p>
+            <div class="job-details"><span>📍 Chennai</span><span>💻 Hybrid</span></div>
+            <div class="skills"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="job-bottom"><div><small>Monthly stipend</small><strong>₹8k–12k</strong></div>
+                <button class="apply-btn" data-job="Web Development Intern"
+                        data-company="NextGen Digital">Apply Now ↗</button></div>
+        </article>
+
+        <article class="job-card" data-category="data"
+                 data-title="business analyst" data-location="hyderabad"
+                 data-company="insightworks">
+            <div class="job-top">
+                <div class="company-icon teal-bg">I</div>
+                <span class="tag">Full-time</span>
+            </div>
+            <h3>Business Analyst</h3>
+            <p class="company">InsightWorks</p>
+            <div class="job-details"><span>📍 Hyderabad</span><span>🏢 On-site</span></div>
+            <div class="skills"><span>SQL</span><span>Excel</span><span>Reporting</span></div>
+            <div class="job-bottom"><div><small>Salary / year</small><strong>₹4–7 LPA</strong></div>
+                <button class="apply-btn" data-job="Business Analyst"
+                        data-company="InsightWorks">Apply Now ↗</button></div>
+        </article>
+
+        <article class="job-card" data-category="design"
+                 data-title="graphic designer" data-location="remote"
+                 data-company="artistry">
+            <div class="job-top">
+                <div class="company-icon rose-bg">A</div>
+                <span class="tag">Part-time</span>
+            </div>
+            <h3>Graphic Designer</h3>
+            <p class="company">Artistry Creative Co.</p>
+            <div class="job-details"><span>📍 Remote</span><span>🏠 Work from home</span></div>
+            <div class="skills"><span>Canva</span><span>Photoshop</span><span>Branding</span></div>
+            <div class="job-bottom"><div><small>Salary / year</small><strong>₹2–5 LPA</strong></div>
+                <button class="apply-btn" data-job="Graphic Designer"
+                        data-company="Artistry Creative Co.">Apply Now ↗</button></div>
+        </article>
+
+        <article class="job-card" data-category="internship"
+                 data-title="java developer intern" data-location="madurai"
+                 data-company="techorbit">
+            <div class="job-top">
+                <div class="company-icon orange-bg">T</div>
+                <span class="tag internship-tag">Internship</span>
+            </div>
+            <h3>Java Developer Intern</h3>
+            <p class="company">TechOrbit Systems</p>
+            <div class="job-details"><span>📍 Madurai</span><span>🏢 On-site</span></div>
+            <div class="skills"><span>Java</span><span>OOP</span><span>MySQL</span></div>
+            <div class="job-bottom"><div><small>Monthly stipend</small><strong>₹6k–10k</strong></div>
+                <button class="apply-btn" data-job="Java Developer Intern"
+                        data-company="TechOrbit Systems">Apply Now ↗</button></div>
+        </article>
+
+    </div>
+
+    <div class="empty-state" id="emptyState" hidden>
+        <div>🔎</div>
+        <h3>No matching jobs found</h3>
+        <p>Try another keyword, location, or category.</p>
+        <button class="btn primary" id="resetSearch">View All Jobs</button>
+    </div>
+</section>
+
+<!-- WHY US -->
+<section class="container section" id="about">
+    <div class="section-heading">
+        <span>WHY CAREERGLOW?</span>
+        <h2>Make Your Career Journey Easier.</h2>
+        <p>Everything you need to take your next professional step.</p>
+    </div>
+
+    <div class="features">
+        <div class="feature-card">
+            <div class="feature-icon">🔍</div>
+            <h3>Discover Opportunities</h3>
+            <p>Explore job roles across technology, design, analytics, and more.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">📄</div>
+            <h3>Easy Applications</h3>
+            <p>Submit your basic details and apply for a role in just a few steps.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🚀</div>
+            <h3>Grow Your Career</h3>
+            <p>Discover new possibilities and find a role that suits your skills.</p>
+        </div>
+    </div>
+</section>
+
+<section class="container">
+    <div class="cta">
+        <div>
+            <h2>Your Dream Career Is Calling!</h2>
+            <p>Take the first step today. Your next opportunity could be here.</p>
+        </div>
+        <a href="#jobs" class="btn white-btn">Explore Opportunities →</a>
+    </div>
+</section>
+
+</main>
+
+<footer class="container">
+    <a href="#" class="logo">✦ CareerGlow</a>
+    <p>© 2026 CareerGlow. Your future, your journey.</p>
+    <div class="footer-links">
+        <a href="#jobs">Jobs</a>
+        <a href="#about">About</a>
+        <a href="mailto:careers@example.com">Contact</a>
+    </div>
+</footer>
+
+<!-- APPLICATION MODAL -->
+<div class="modal" id="applyModal" role="dialog"
+     aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+        <button class="close-btn" id="closeModal" aria-label="Close">&times;</button>
+
+        <div id="formSection">
+            <span class="badge">✦ YOUR NEXT OPPORTUNITY</span>
+            <h2 id="modalTitle">Apply for a Job</h2>
+            <p id="selectedJob">Complete your details below.</p>
+
+            <form id="applicationForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input id="fullName" name="name" type="text"
+                           placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input id="email" name="email" type="email"
+                           placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Mobile Number</label>
+                    <input id="phone" name="phone" type="tel"
+                           placeholder="Enter your mobile number"
+                           pattern="[0-9]{10}" maxlength="10" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Experience Level</label>
+                    <select id="experience" name="experience" required>
+                        <option value="">Select your experience</option>
+                        <option>Fresher</option>
+                        <option>Less than 1 year</option>
+                        <option>1–3 years</option>
+                        <option>3+ years</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="resume">Resume (PDF, optional)</label>
+                    <input id="resume" name="resume" type="file"
+                           accept=".pdf,application/pdf">
+                </div>
+
+                <button class="btn primary submit-btn" type="submit">
+                    Submit Application →
+                </button>
+                <p class="note">Demo only. Your application is not sent to a real employer.</p>
+            </form>
+        </div>
+
+        <div class="success-message" id="successMessage" hidden>
+            <div class="success-icon">✓</div>
+            <h2>Application Submitted!</h2>
+            <p id="confirmationDetails"></p>
+            <button class="btn primary" id="doneBtn">Back to Jobs</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
